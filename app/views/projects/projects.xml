@@ -1,0 +1,16 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+		<ActionBar title="Projects">
+			<ActionBar.actionItems>
+				<ActionItem text="Sign Out" tap="logout" ios.position="right" />
+			</ActionBar.actionItems>
+		</ActionBar>
+	</Page.actionBar>
+    <ListView items="{{ projects }}" itemTap="navigateToTasks">
+        <ListView.itemTemplate>
+            <StackLayout>
+                <Label text="{{ name }}" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
